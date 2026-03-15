@@ -1,45 +1,50 @@
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #0f172a; /* Dark Navy */
-    color: #f8fafc;
-    margin: 0;
-    line-height: 1.6;
+/* Hero Section Layout */
+.hero {
+    text-align: center;
+    padding: 100px 10%;
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
 }
 
-nav {
+.hero h2 {
+    color: #38bdf8;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.hero-btns {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 5%;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
     gap: 20px;
-    padding: 5%;
+    margin-top: 30px;
 }
 
-.card {
-    background: #1e293b;
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #334155;
-    transition: transform 0.3s ease;
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8; /* Blue highlight */
+.btn.primary {
+    background-color: #38bdf8;
+    color: #0f172a;
 }
 
-.card.wide {
-    grid-column: span 2;
+.btn.secondary {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
 }
 
-.tag {
-    background: #0ea5e9;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    margin-right: 5px;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    filter: brightness(1.1);
+}
+
+/* Card Heading adjustments */
+.card h3 {
+    margin-top: 0;
+    color: #38bdf8;
 }
