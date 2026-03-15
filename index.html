@@ -3,41 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Ragasa | Mechanical Engineering Portfolio</title>
+    <title>Ethan Ragasa | Robotics & Controls Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">ER</div> <ul>
+        <div class="logo">ER</div>
+        <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="resume.pdf">Resume</a></li>
+            <li><a href="resume.pdf" class="nav-btn">Resume</a></li>
         </ul>
     </nav>
 
-    <header id="about">
-        <h1>Hi, I'm Ethan Ragasa</h1>
-        <p>Mechanical Engineer specializing in Vibrations & Linear Generators.</p>
+    <header id="about" class="hero">
+        <h1>Ethan Ragasa</h1>
+        <h2>Georgia Tech Student | Engineer | Cofounder</h2>
+        <p>Mechanical Engineering student at Georgia Tech specializing in Robotics, Nonlinear Controls, and Maritime Energy Harvesting.</p>
+        
+        <div class="hero-btns">
+            <a href="resume.pdf" target="_blank" class="btn primary">Resume</a>
+            <a href="#projects" class="btn secondary">Portfolio</a>
+        </div>
     </header>
 
     <main id="projects">
         <section class="grid">
             <div class="card wide">
-                <h2>Linear Generator Project</h2>
-                <p>Designed for marine environments using N52 magnets and PETG housing. Analyzed magnetic flux via Elmer FEA.</p>
-                <span class="tag">FEA</span> <span class="tag">SolidWorks</span>
+                <h3>Laminar Scientific: MantaWave & MantaHub</h3>
+                <p>Led architectural transition to seal-less external magnet configurations. Optimized flux density using <strong>Elmer FEA</strong> and implemented <strong>FMEA/GD&T</strong> for maritime resilience.</p>
+                <div class="tags">
+                    <span class="tag">Elmer FEA</span>
+                    <span class="tag">SolidWorks</span>
+                    <span class="tag">DFM</span>
+                </div>
             </div>
 
             <div class="card">
-                <h2>Vibrations & Dynamics</h2>
-                <p>Stability analysis of SDOF systems and Coulomb damping simulations in MATLAB.</p>
-                <span class="tag">MATLAB</span>
+                <h3>Robotics Research: Incipient Slip</h3>
+                <p>Developed <strong>Python/OpenCV</strong> systems for GelSight sensors to detect slip and tuned <strong>MATLAB PID</strong> controllers for end-effector trajectory tracking.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">MATLAB</span>
+                </div>
             </div>
 
             <div class="card">
-                <h2>Prototyping</h2>
-                <p>Precision printing with Creality K1C using high-strength CR-PETG.</p>
-                <span class="tag">K1C</span>
+                <h3>Lunar Regolith Collection</h3>
+                <p>Validated vertical transport of 20-80 µm particles via <strong>Electrodynamic Traveling Wave (ETW)</strong> mechanisms under high-vacuum lunar conditions.</p>
+                <div class="tags">
+                    <span class="tag">Vacuum Testing</span>
+                    <span class="tag">Aerospace</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Autonomous Robotics (ME 2110)</h3>
+                <p>Ranked 4th of 68 teams in a high-stakes design competition. Built autonomous systems using <strong>Arduino (C++)</strong> and pneumatic actuators.</p>
+                <div class="tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Prototyping</span>
+                </div>
             </div>
         </section>
     </main>
